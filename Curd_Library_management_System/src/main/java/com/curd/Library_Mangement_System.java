@@ -22,8 +22,8 @@ public class Library_Mangement_System
 		System.out.println("""
 				***************System on*****************
 				*                                       *
-				*    Enter 0 for Exit the System        *
-				*    Enter 1 for the Login              *
+				*    Enter 1 for Exit the System        *
+				*    Enter 2 for the Login              *
 				*                                       *
 				*****************************************
 				""");
@@ -33,30 +33,31 @@ public class Library_Mangement_System
 		while(flag == true) {
 			String action = "";
 			while (true) {
-			    System.out.println("Enter your input (login-1, Exit system-0):");
+			    System.out.println("Enter your input ( Exit system-1, login-2):");
 			    String input = sc.nextLine().trim();
 
-			    if (input.matches("[01]")) 
+			    if (input.matches("[12]")) 
 			    {
 			        action = input;
 			        break;  			    
 			    } 
 			    else 
 			    {
-			        System.out.println("Invalid input. Please enter 0 or 1 only.");
+			        System.out.println("Invalid input. Please enter 1 or 2 only.");
+			      
 			    }
 			}
 			
 			
 			switch (action)
 			{
-				case "0":
+				case "1":
 					flag=false;
 					System.out.println("Thank You! You exit from System");
 					
 					break;
 					
-				case "1":
+				case "2":
 					
 					try
 					{

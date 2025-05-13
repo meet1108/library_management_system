@@ -41,7 +41,12 @@ public class ManagementService
 		while (!validator.validateUserName(username))
 		{
 			System.out.println("Enter your proper userName ");
+			System.out.println("Enter 0 for Exit!");
 			username = sc.nextLine().trim();
+			if(username =="0") {
+				break;
+			}
+		
 		}
 
 
@@ -70,7 +75,7 @@ public class ManagementService
 		}
 		else
 		{
-			System.out.println("Wrong User Name(a-zA_Z_ whitespace)!!");
+//			System.out.println("Wrong User Name(a-zA_Z_ whitespace)!!");
 //			System.out.println("Please Check Your UserName and Password, Rewrite Both!!");
 			return flagHolder;
 		}

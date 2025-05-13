@@ -7,7 +7,7 @@ public class validator
 {
 
 	static String NameRegex				=		"^[A-Za-z][A-Za-z_ ]{2,25}$";
-	static String userNameRegex 		=		"^[A-Za-z][A-Za-z0-9_ ]{3,25}$";
+	static String userNameRegex 		=		"(^[A-Za-z][A-Za-z0-9_ ]{3,25}$|0)";
 	static String passwordRegex			=		"^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$";
 	static String cheackDigitRegex		=		"^[1-9]\\d*$";
 	static String mobileNumberRegex		=		"^[6-9]\\d{9}$";
